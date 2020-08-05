@@ -1,0 +1,74 @@
+{
+  "name": "launch",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start reset cache": "npm start -- --reset-cache",
+    "start": "react-native start",
+    "web:start": "react-app-rewired start",
+    "web:build": "react-app-rewired build",
+    "web:test": "react-app-rewired test --env=jsdom",
+    "clear gradle": "cd android/ && ./gradlew clean && cd .."
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-dom": "^16.13.1",
+    "react-native": "0.63.0",
+    "react-native-web": "^0.13.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@types/jest": "^25.2.3",
+    "@types/react-native": "^0.63.1",
+    "@types/react-test-renderer": "^16.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "babel-jest": "24.9.0",
+    "babel-plugin-import": "^1.13.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "customize-cra": "^1.0.0",
+    "customize-cra-react-refresh": "^1.1.0",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "jest": "24.9.0",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "prettier": "^2.0.4",
+    "react-app-rewired": "^2.1.6",
+    "react-scripts": "^3.4.1",
+    "react-test-renderer": "16.13.1",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
